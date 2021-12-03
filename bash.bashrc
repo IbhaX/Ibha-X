@@ -1,5 +1,4 @@
-
-
+##Sweet-Terminal
 matrix(){
     tput setaf 2 &>/dev/null # green powaaa
     for ((i=0; i<=${#1}; i++)); do
@@ -11,42 +10,31 @@ matrix(){
 
 clear
 
-fortune | cowsay -f eyes | lolcat -p 1
-
-matrix "[+]-[Hello Albi...]" | lolcat -p 1
-
-echo -e "\n"
-
-matrix "[+]-[Checking Internet Connection....]" | lolcat -p 1
+    fortune | cowsay -f eyes | lolcat -p 1
+    matrix "[+]-[Hello Albi...]" | lolcat -p 1
+    echo -e "\n"
+    matrix "[+]-[Checking Internet Connection....]" | lolcat -p 1
+    echo -e "\n"
 
 if ping -q -c 1 -W 1 google.com >/dev/null 2>1; then
 
-echo -e "\n"
-
-matrix "[+]-[Internet Connection]...[ ACTIVE ]" | lolcat -p 1
-
-
-echo -e "\n"
-
-matrix "[+]-[Packages Updating....]" | lolcat -p 1
-pkg update -y &> /dev/null 2>&1 | pkg upgrade -y &> /dev/null 2>&1
-
-echo -e "\n"
-
-matrix "[+]-[Packages Updated....]" | lolcat -p 1
+    matrix "[+]-[Internet Connection]...[ ACTIVE ]" | lolcat -p 1
+    echo -e "\n"
+    matrix "[+]-[Packages Updating....]" | lolcat -p 1
+    pkg update -y &> /dev/null 2>&1 | pkg upgrade -y &> /dev/null 2>&1
+    echo -e "\n"
+    matrix "[+]-[Packages Updated....]" | lolcat -p 1
 
 clear
 
 else
-echo -e "\n"
-matrix "[+]-[No Internet Connection...]" | lolcat -p 1
-
-echo -e "\n"
-
-matrix "[+]-[Package Updation Failed...]" | lolcat -p 1
-sleep 0.3
-echo -e "$default"
-echo ""
+    echo -e "\n"
+    matrix "[+]-[No Internet Connection...]" | lolcat -p 1
+    echo -e "\n"
+    matrix "[+]-[Package Updation Failed...]" | lolcat -p 1
+    sleep 0.3
+    echo -e "$default"
+    echo ""
 fi
 
 clear
