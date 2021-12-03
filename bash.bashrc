@@ -29,7 +29,9 @@ matrix "[+]-[Internet Connection]...[ ACTIVE ]" | lolcat -p 1
 echo -e "\n"
 
 matrix "[+]-[Packages Updating....]" | lolcat -p 1
-pkg update -y &> /dev/null 2>&1 | pkg upgrade -y &> /dev/null 2>&1 | timeout 5s cmatrix
+pkg update -y &> /dev/null 2>&1 | pkg upgrade -y &> /dev/null 2>&1
+
+echo -e "\n"
 
 matrix "[+]-[Packages Updated....]" | lolcat -p 1
 
