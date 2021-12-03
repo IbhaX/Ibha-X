@@ -24,7 +24,9 @@ pip install lolcat
     cd
     cd IbhaX
     cp m1rx ~/bin
-    source ~/bin/m1rx
+    sudo nano ~/.bashrc
+    export PATH="/data/data/com.termux/files/home/bin:$PATH"
+    source ~/.bashrc
     timeout 5s m1rx
 
     mkdir tools
