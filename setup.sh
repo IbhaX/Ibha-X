@@ -8,7 +8,7 @@ pkg update -y && pkg upgrade -y
 
 termux-setup-storage
 
-declare -a packages=("cmatrix" "ncurses-utils" "ruby" "fortune" "cowsay" "termux-tools" "termux-api" "git" "php" "perl" "python" "python2" "wget" "curl")
+declare -a packages=("cmatrix" "fortune" "cowsay" "termux-tools" "python" "python2")
 
 for i in "${packages[@]}"; do
     if ! dpkg-query -W -f='${Status}' $i 2>/dev/null | grep -q "ok installed"; then
@@ -19,20 +19,17 @@ for i in "${packages[@]}"; do
     fi
 done
 
-pip install lolcat
-
-   
-
+    pip install lolcat
     mkdir tools
     cd tools
-git clone https://github.com/Albiahbii/cupp
-git clone https://github.com/Albiahbii/XLR8_BOMBER
-git clone https://github.com/albiahbi/TBOMB-version-2.0
-git clone https://github.com/Albiahbii/PhishMailer
-git clone https://github.com/Albiahbii/Scylla
-git clone https://github.com/xHak9x/SocialPhish
+    git clone https://github.com/Albiahbii/cupp
+    git clone https://github.com/Albiahbii/XLR8_BOMBER
+    git clone https://github.com/albiahbi/TBOMB-version-2.0
+    git clone https://github.com/Albiahbii/PhishMailer
+    git clone https://github.com/Albiahbii/Scylla
+    git clone https://github.com/xHak9x/SocialPhish
 
-clear
+    clear
 
 read -p " Do you want to install IbhaX Shell in Termux?(Yes/No) : " input
 
@@ -40,19 +37,21 @@ if [[ $input == Yes || $input == yes || $input == y || $input == Y ]]; then
     clear
     cd
     mkdir backup
-    cd IbhaX
+    cd Ibha-X
     cp default $HOME/backup
     cd /data/data/com.termux/files/usr/etc
-    mv bash.bashrc $HOME/backup
+    cp bash.bashrc $HOME/backup
+    rm -rf bash.bashrc
     rm -rf motd
     cd
-    cd ~/IbhaX
+    cd Ibha-X
     cp bash.bashrc /data/data/com.termux/files/usr/etc
     cd 
     cd .termux
-    mv termux.properties $HOME/backup
+    cp termux.properties $HOME/backup
+    rm -rf termux.properties
     cd
-    cd IbhaX
+    cd Ibha-X
     cp termux.properties $HOME/.termux
     cd
     clear
