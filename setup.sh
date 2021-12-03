@@ -39,11 +39,11 @@ read -p " Do you want to install IbhaX Shell in Termux?(Yes/No) : " input
 if [[ $input == Yes || $input == yes || $input == y || $input == Y ]]; then
     clear
     cd
-    mkdir backup
     cd Ibha-X
-    cp default $HOME/backup
+    mkdir .backup
     cd /data/data/com.termux/files/usr/etc
-    cp bash.bashrc $HOME/backup
+    cp default $HOME/Ibha-X/.backup
+    cp bash.bashrc $HOME/Ibha-X/.backup
     rm -rf bash.bashrc
     rm -rf motd
     cd
@@ -51,7 +51,7 @@ if [[ $input == Yes || $input == yes || $input == y || $input == Y ]]; then
     cp bash.bashrc /data/data/com.termux/files/usr/etc
     cd 
     cd .termux
-    cp termux.properties $HOME/backup
+    cp termux.properties $HOME/Ibha-X/.backup
     rm -rf termux.properties
     cd
     cd Ibha-X
