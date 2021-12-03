@@ -1,25 +1,28 @@
 #!/system/bin/bash
 
 clear
-
 cd
-
 pkg update -y && pkg upgrade -y
-
 termux-setup-storage
 
-declare -a packages=("cmatrix" "fortune" "cowsay" "termux-tools" "python" "python2")
-
-for i in "${packages[@]}"; do
+declare -a packages=("ruby" "cmatrix" "fortune" "cowsay" "termux-tools" "python" "python2")
+ for i in "${packages[@]}"; do
     if ! dpkg-query -W -f='${Status}' $i 2>/dev/null | grep -q "ok installed"; then
         echo "$i is not installed, Installing now..."
             pkg install "$i" -y
     else
         echo "The $i package has already been installed."
     fi
-done
+ done
 
-    pip install lolcat
+
+    cd
+    wget https://github.com/busyloop/lolcat/archive/master.zip
+    unzip master.zip
+    cd lolcat-master/bin
+    gem install lolcat
+
+    cd
     mkdir tools
     cd tools
     git clone https://github.com/Albiahbii/cupp
