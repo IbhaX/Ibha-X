@@ -8,7 +8,11 @@ if [[ $input == Yes || $input == yes || $input == y || $input == Y ]]; then
     cd /data/data/com.termux/files/usr/etc
     rm -rf bash.bashrc
     cd $HOME/Ibha-X/.backup
-    mv bash.bashrc /data/data/com.termux/files/usr/etc
+    mv bash.bashrc default /data/data/com.termux/files/usr/etc
+    cd
+    cd .termux && rm -rf termux.properties
+    cd && cd $HOME/Ibha-X/.backup
+    mv termux.properties $HOME/.termux
     cd $HOME
     rm -rf Ibha-X
     echo -e "\e[1;91mSuccessfully Uninstalled"
