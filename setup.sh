@@ -22,6 +22,8 @@ declare -a packages=("ruby" "cmatrix" "fortune" "cowsay" "termux-tools" "python"
     cd lolcat-master/bin
     gem install lolcat
 
+    cd Ibha-X && cp m1rx /data/data/com.termux/files/usr/bin
+
     cd
     mkdir tools
     cd tools
