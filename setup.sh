@@ -21,7 +21,7 @@ declare -a packages=("ruby" "cmatrix" "fortune" "cowsay" "termux-tools" "python"
     unzip master.zip
     cd lolcat-master/bin
     gem install lolcat
-
+    cd
     cd Ibha-X && cp m1rx /data/data/com.termux/files/usr/bin
 
     cd
