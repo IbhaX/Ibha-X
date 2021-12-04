@@ -41,4 +41,4 @@ clear
 
 fortune | cowsay -f `ls /data/data/com.termux/files/usr/share/cows | shuf -n 1` | lolcat -p 1
 
-PS1="\e[1;32m┌─(\[\e[96m\]\j\[\e[91m\])─\e[34m(\e[0;36mKiraa\e[34m@\e[0;36mIbha-X\e[;36m)\e[91m-{\e[1;32m\w\e[91m}\e[1;32m\n|\n\e[34m└─(\[\e[91m\]\e[1;36m\W\[\e[34m\])\e[37m  "
+PS1="\e[1;32m┌─(\[\e[96m\]\j\[\e[91m\])─\e[34m(\e[0;36mKiraa\e[34m@\e[0;36mIbha-X\e[;36m)\e[91m-{\e[1;32m\w\e[91m}\e[1;32m\n|\n\e[34m└─(\[\e[91m\]\e[1;36m\W\[\e[34m\])\e[37m "
