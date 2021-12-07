@@ -5,7 +5,7 @@ cd
 pkg update -y && pkg upgrade -y
 termux-setup-storage
 
-declare -a packages=("ruby" "cmatrix" "fortune" "cowsay" "termux-tools" "python" "python2")
+declare -a packages=("ruby" "cmatrix" "fortune" "cowsay")
  for i in "${packages[@]}"; do
     if ! dpkg-query -W -f='${Status}' $i 2>/dev/null | grep -q "ok installed"; then
         echo "$i is not installed, Installing now..."
