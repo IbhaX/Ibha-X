@@ -36,7 +36,7 @@ declare -a packages=("ruby" "cmatrix" "fortune" "cowsay" "termux-tools" "python"
 
     clear
 
-read -p " Do you want to install IbhaX Shell in Termux?(Yes/No) : " input
+read -p " Do you want to install IbhaX Theme in Termux?(Yes/No) : " input
 
 if [[ $input == Yes || $input == yes || $input == y || $input == Y ]]; then
     clear
