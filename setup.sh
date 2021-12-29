@@ -49,7 +49,7 @@ declare -a packages=("ruby" "cmatrix" "fortune" "cowsay" "python" "python2")
     git clone https://github.com/Albiahbii/Scylla
     cd Scylla
     chmod +x scylla.py
-    python3 -m pip install -r requirements.txt
+    python3 -m pip install -r requirments.txt
     cd ..
     git clone https://github.com/xHak9x/SocialPhish
     cd SocialPhish
