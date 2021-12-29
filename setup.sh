@@ -45,11 +45,13 @@ declare -a packages=("ruby" "cmatrix" "fortune" "cowsay" "python" "python2")
     git clone https://github.com/Albiahbii/PhishMailer
     cd PhishMailer
     chmod +x PhishMailer.py
+    pip install beautifulsoup4
     cd ..
     git clone https://github.com/Albiahbii/Scylla
     cd Scylla
     chmod +x scylla.py
     python3 -m pip install -r requirments.txt
+    pip install googlesearch-python
     cd ..
     git clone https://github.com/xHak9x/SocialPhish
     cd SocialPhish
