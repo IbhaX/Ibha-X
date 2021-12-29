@@ -27,63 +27,34 @@ declare -a packages=("ruby" "cmatrix" "fortune" "cowsay")
  htools () {
 
    cd
-
     mkdir tools
-
     cd tools
-
     git clone https://github.com/Albiahbii/cupp
-
     cd cupp
-
     chmod +x  cupp.py
-
     cd ..
-
     git clone https://github.com/Albiahbii/XLR8_BOMBER
-
     cd XLR8_BOMBER
-
     chmod +x xlr8.py
-
     cd ..
-
     git clone https://github.com/albiahbi/TBOMB-version-2.0
-
     cd TBOMB-version-2.0
-
     chmod +x TBomb.sh bomber.py
-
     pip install -r requirements.txt
-
     cd ..
-
     git clone https://github.com/Albiahbii/PhishMailer
-
     cd PhishMailer
-
     chmod +x PhishMailer.py
-
     cd ..
-
     git clone https://github.com/Albiahbii/Scylla
-
     cd Scylla
-
     chmod +x scylla.py
-
     python3 -m pip install -r requirements.txt
-
     cd ..
-
     git clone https://github.com/xHak9x/SocialPhish
-
     cd SocialPhish
-
     chmod +x socialphish.sh
-
     cd
-
     clear
 
 }
@@ -101,13 +72,11 @@ if [[ $input == Yes || $input == yes || $input == y || $input == Y ]]; then
     cd /data/data/com.termux/files/usr/etc
     cp default $HOME/Ibha-X/.backup
     cp bash.bashrc $HOME/Ibha-X/.backup
+    cd $HOME/Ibha-X
     cp .bashrc /data/data/com.termux/files/home
-
     cd
-
     source ~/.bashrc
     cd /data/data/com.termux/files/usr/etc
-
     rm -rf bash.bashrc
     rm -rf motd
     cd
@@ -125,7 +94,6 @@ if [[ $input == Yes || $input == yes || $input == y || $input == Y ]]; then
     echo -e "\e[1;91mSuccessfully Installed"
     echo -e "Restart Termux to view changes..."
     echo -e ""
-
     exit  3
 
 elif [[ $input == No || $input == no || $input == n || $input == N ]]; then
