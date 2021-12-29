@@ -8,6 +8,7 @@ Feel free to make changes as per your needs...
 ```
 pkg update -y && pkg upgrade -y && pkg install git && git clone https://github.com/Albiahbii/Ibha-X && cd Ibha-X && chmod +x setup.sh uninstall.sh && bash setup.sh
 ```
+Alias ```bomb``` doesn't work unless you've updated the tool. By default this tool uses bash, however alias is set for python.
 # Screenshots:
 *Screenshot 1*
 ![Screenshot_20211207_170829_84d3000e3f4017145260f7618db1d683](https://user-images.githubusercontent.com/89918383/145023359-6626a3b3-8e62-47c8-a251-91caa797e873.jpg)
@@ -20,8 +21,25 @@ pkg update -y && pkg upgrade -y && pkg install git && git clone https://github.c
 
 *Screen-Record:* https://user-images.githubusercontent.com/89918383/145023392-0b7be816-8aa8-4ffc-81eb-3761b04a6e00.mp4
 
+# Aliases - (Shortcuts)
+##### ```cupp``` - Password Profiler
+##### ```bomb``` - XLR8_BOMBER (SMS and Call Bomber) 
+##### ```ph``` - Scylla (Reverse Phone Lookup)
+##### ```insta``` - Scylla (Instagram Lookup)
+##### ```username``` - Scylla (Username Lookup)
+##### ```phish``` - Zphisher (Phishing Tool)
+
 
 # Tested on:
 1) Vivo v15 pro
 2) Redmi pro maxx 9
 3) Oppo f7
+
+# Credits
+#### Cupp - Mebus
+#### XLR8_BOMBER - anubhavanonymous
+#### TBOMB - Nithish1314
+#### PhishMailer - BiZken
+#### Scylla - MandConsultingGroup
+#### SocialPhish - xHak9x
+#### Zphisher - htr-tech
