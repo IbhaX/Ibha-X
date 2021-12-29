@@ -24,17 +24,72 @@ declare -a packages=("ruby" "cmatrix" "fortune" "cowsay")
     cd
     cd Ibha-X && cp m1rx /data/data/com.termux/files/usr/bin
 
-    cd
+ htools () {
+
+   cd
+
     mkdir tools
+
     cd tools
+
     git clone https://github.com/Albiahbii/cupp
+
+    cd cupp
+
+    chmod +x  cupp.py
+
+    cd ..
+
     git clone https://github.com/Albiahbii/XLR8_BOMBER
+
+    cd XLR8_BOMBER
+
+    chmod +x xlr8.py
+
+    cd ..
+
     git clone https://github.com/albiahbi/TBOMB-version-2.0
+
+    cd TBOMB-version-2.0
+
+    chmod +x TBomb.sh bomber.py
+
+    pip install -r requirements.txt
+
+    cd ..
+
     git clone https://github.com/Albiahbii/PhishMailer
+
+    cd PhishMailer
+
+    chmod +x PhishMailer.py
+
+    cd ..
+
     git clone https://github.com/Albiahbii/Scylla
+
+    cd Scylla
+
+    chmod +x scylla.py
+
+    python3 -m pip install -r requirements.txt
+
+    cd ..
+
     git clone https://github.com/xHak9x/SocialPhish
 
+    cd SocialPhish
+
+    chmod +x socialphish.sh
+
+    cd
+
     clear
+
+}
+
+htools
+
 
 read -p " Do you want to install IbhaX Theme in Termux?(Yes/No) : " input
 
