@@ -35,7 +35,7 @@ declare -a packages=("ruby" "cmatrix" "fortune" "cowsay" "python" "python2")
     cd ..
     git clone https://github.com/Albiahbii/XLR8_BOMBER
     cd XLR8_BOMBER
-    chmod +x xlr8.py
+    chmod +x xlr8.sh
     cd ..
     git clone https://github.com/albiahbi/TBOMB-version-2.0
     cd TBOMB-version-2.0
