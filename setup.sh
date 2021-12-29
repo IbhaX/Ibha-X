@@ -101,6 +101,13 @@ if [[ $input == Yes || $input == yes || $input == y || $input == Y ]]; then
     cd /data/data/com.termux/files/usr/etc
     cp default $HOME/Ibha-X/.backup
     cp bash.bashrc $HOME/Ibha-X/.backup
+    cp .bashrc /data/data/com.termux/files/home
+
+    cd
+
+    source ~/.bashrc
+    cd /data/data/com.termux/files/usr/etc
+
     rm -rf bash.bashrc
     rm -rf motd
     cd
