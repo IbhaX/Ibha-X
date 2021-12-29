@@ -11,7 +11,7 @@ tytr(){
 clear
 
     fortune | cowsay -f eyes | lolcat -p 1
-    tytr "[+]-[Hello Albi...]" | lolcat -p 1
+    tytr "[+]-[Hello there...]" | lolcat -p 1
     echo -e "\n"
     tytr "[+]-[Checking Internet Connection....]" | lolcat -p 1
     echo -e "\n"
