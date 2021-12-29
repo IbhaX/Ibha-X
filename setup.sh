@@ -54,11 +54,13 @@ declare -a packages=("ruby" "cmatrix" "fortune" "cowsay" "python" "python2")
     git clone https://github.com/xHak9x/SocialPhish
     cd SocialPhish
     chmod +x socialphish.sh
-    cd
+    cd ..
+    git clone git://github.com/htr-tech/zphisher.git
+    cd zphisher
+    chmod +x zphisher
     clear
-
+    cd
 }
-
 htools
 
 
